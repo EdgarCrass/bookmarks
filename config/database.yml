@@ -20,7 +20,8 @@ development:
   database: bookmarks_development
   pool: 5
   username: bookmarks
-  password:
+  password: student
+  host: localhost
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -49,12 +50,6 @@ test:
   database: bookmarks_test
   pool: 5
   username: bookmarks
-  password:
+  password: student
+  host: localhost
 
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: bookmarks_production
-  pool: 5
-  username: bookmarks
-  password:
