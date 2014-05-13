@@ -21,13 +21,4 @@ describe Bookmark do
 		before { @bookmark.name = " " }
     it { should_not be_valid }
   end
-
-	describe "when url is already taken" do
-    before do
-      bookmark_with_same_url = @bookmark.dup
-      bookmark_with_same_url.save
-    end
-
-    it { should_not be_valid }
-  end
 end

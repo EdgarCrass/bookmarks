@@ -8,7 +8,6 @@
 </head>
 <body>
 <%= link_to "bookmarks", bookmarks_path %>
-<%= link_to "new bookmark", new_bookmark_path %>
 <%= yield %>
 
 </body>
